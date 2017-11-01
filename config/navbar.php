@@ -29,7 +29,7 @@ return [
 
             "test" => [
                 "text"  => t("Test"),
-                "url"   => $this->di->get("url")->create("about"),
+                "url"   => $this->di->get("url")->create("test"),
                 "title" => t("Testsida i siten")
             ],
         ],
