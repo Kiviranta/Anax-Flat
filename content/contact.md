@@ -1,4 +1,4 @@
-Contact
+Kontaktinformation
 ==============================================
 
-Any questions about this site can be emailed to [Mikael Roos](https://mikaelroos.se) on (mos@dbwebb.se).
+E-post skickas till [Kimmo Kiviranta](https://www.facebook.com/kiviranta) på (kimmo@ceemo.com).
