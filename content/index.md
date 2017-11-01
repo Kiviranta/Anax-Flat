@@ -1,12 +1,13 @@
 ---
 titleBreadcrumb: Home
 ...
-Kimmo Kivirantas Me-Site
+Kimmo Kivirantas ME-site
 ===============================
+
 Hej!
 
-Välkommen!
-Denna Site är byggd med Anax-flat som ramverk.
+Välkommen till min ME-site gjord med Anax-Flat som ramverk.
 
-Hälsningar
-Kimmo Kiviranta
+Detta är en del av kursen Design på BTH.
+
+/Kimmo

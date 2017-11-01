@@ -9,9 +9,7 @@ views:
                 type: content
                 route: block/byline
 ...
-Om denna site
+TestSida
 ==============================================
 
-Källkoden för denna site finns på GitHub i [canax/anax-flat](git@github.com:canax/anax-flat.git).
-
-Siten är producerad av [Kimmo Kiviranta](https://www.facebook.com/kiviranta) (kimmo@ceemo.com).
+Denna sida är tillagd för att testa skapande av nya sidor och att skapa navigering i Anax-Flat.

@@ -1,4 +1,4 @@
-Introduction
+Introduktion KMOM
 ===============================
 
-Here are my reports for the different kmoms.
+Här finns samtliga redovisningar för kursen Design.

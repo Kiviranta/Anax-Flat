@@ -15,22 +15,22 @@ return [
         "items" => [
 
             "report" => [
-                "text"  => t("Rapport"),
+                "text"  => t("Redovisningar"),
                 "url"   => $this->di->get("url")->create("report"),
-                "title" => t("KMOM rapporter"),
+                "title" => t("Redovisningar för Kmom i kursen"),
                 "mark-if-parent" => true,
             ],
 
             "about" => [
-                "text"  => t(" OM "),
+                "text"  => t(" Om "),
                 "url"   => $this->di->get("url")->create("about"),
-                "title" => t("Information om denna site")
+                "title" => t("Om denna site")
             ],
 
             "test" => [
-                "text"  => t("test"),
-                "url"   => $this->di->get("url")->create("test"),
-                "title" => t("Ny testsida")
+                "text"  => t("Test"),
+                "url"   => $this->di->get("url")->create("about"),
+                "title" => t("Testsida i siten")
             ],
         ],
     ],
