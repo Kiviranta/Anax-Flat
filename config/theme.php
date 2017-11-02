@@ -18,8 +18,8 @@ return [
             //"lang"          => "en",
             "lang"          => "sv",
             "charset"       => "utf-8",
-            "title_append"  => " | Anax Flat",
-            "favicon"       => "img/favicon/favicon_256x256.png",
+            "title_append"  => " | ME-Site with anax-flat",
+            "favicon"       => "img/favicon/favicon_128x128.png",
 
             // Style and stylesheets
             "stylesheets" => ["css/default.min.css"],
@@ -51,9 +51,9 @@ return [
             "template" => "default/header",
             "data" => [
                 "homeLink"      => "",
-                "siteLogoText"  => "Anax Flat",
+                "siteLogoText"  => "KK ME-Site",
                 "siteLogoTextIcon" => "img/favicon/favicon_40x40.png",
-                "siteLogoTextIconAlt" => "Small logo",
+                "siteLogoTextIconAlt" => "Small logo KK ME-Site",
                 "siteLogo"      => null, //"img/anax.png",
                 "siteLogoAlt"   => null, //"Anax Logo",
                 "siteTitle"     => null, //"Anax PHP framework",
