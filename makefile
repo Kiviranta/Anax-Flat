@@ -21,7 +21,7 @@ HELPTEXT 	= /bin/echo -e "$(ACTION)--->" `egrep "^\# target: $(1) " Makefile | s
 
 
 
-# target: help                - Displays help.
+# target: help				- Displays help.
 .PHONY:  help
 help:
 	@$(call HELPTEXT,$@)
@@ -32,7 +32,7 @@ help:
 
 
 
-# target: site-build          - Copy default structure from Anax Flat.
+# target: site-build		  - Copy default structure from Anax Flat.
 .PHONY: site-build
 site-build:
 	@$(call HELPTEXT,$@)
@@ -53,7 +53,7 @@ site-build:
 
 
 
-# target: site-update         - Make composer update and copy latest files.
+# target: site-update		 - Make composer update and copy latest files.
 .PHONY: site-update
 site-update:
 	@$(call HELPTEXT,$@)
@@ -68,7 +68,7 @@ site-update:
 
 
 
-# target: prepare-build       - Clear and recreate the build directory.
+# target: prepare-build	   - Clear and recreate the build directory.
 .PHONY: prepare-build
 prepare-build:
 	@$(call HELPTEXT,$@)
@@ -77,7 +77,7 @@ prepare-build:
 
 
 
-# target: less                - Compiling LESS stylesheet.
+# target: less				- Compiling LESS stylesheet.
 .PHONY: less
 less: prepare-build
 	@$(call HELPTEXT,$@)
@@ -90,7 +90,7 @@ less: prepare-build
 
 
 
-# target: less-lint           - Linting LESS/CSS stylesheet.
+# target: less-lint		   - Linting LESS/CSS stylesheet.
 .PHONY: less-lint
 less-lint: less
 	@$(call HELPTEXT,$@)
@@ -98,17 +98,33 @@ less-lint: less
 	- csslint build/css/style.css > build/lint/style.css
 	ls -l build/lint/
 
+# target: upgrade-normalize	   - Upgrade LESS module - Normalize.
+.PHONY: upgrade-normalize
+upgrade-normalize:
+	@$(call HELPTEXT,$@)
+	npm update normalize.css
+	cp node_modules/normalize.css/normalize.css modules/normalize.less
 
+# target: upgrade-responsive-menu - Upgrade LESS module - Responsive menu
+.PHONY: upgrade-responsive-menu
+upgrade-responsive-menu:
+	@$(call HELPTEXT,$@)
+	npm update desinax-responsive-menu
+	cp node_modules/desinax-responsive-menu/src/less/responsive-menu.less modules/
+	cp node_modules/desinax-responsive-menu/src/js/responsive-menu.js js/
 
-# target: theme               - Do make in theme/ subfolder.
+# target: theme			   - Do make in theme/ subfolder.
 .PHONY: theme
 theme:
 	@$(call HELPTEXT,$@)
 	$(MAKE) -C theme less-install
 
+# target: upgrade                 - Upgrade external LESS modules.
+.PHONY: upgrade
+upgrade: upgrade-normalize upgrade-responsive-menu
+	@$(call HELPTEXT,$@)
 
-
-# target: test                - Run tests.
+# target: test				- Run tests.
 .PHONY: test
 test:
 	@$(call HELPTEXT,$@)
